@@ -18,11 +18,12 @@ def swap_elements(array)
 end
 
 def reverse_array(array)
-  array.reverse
+  array.sort.reverse
 end
 
 def kesha_maker(array)
   array.collect {|elem| elem[2] = '$'}
+  array
 end
 
 def find_a(array)
